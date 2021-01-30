@@ -1,9 +1,7 @@
 #FaceMask detection model
 **Build your CNN model using Keras to identify whether a person is wearing a faceMask or not**
-###**1**.   **The Setup phase**
-"""
 
-#---------------------------The import statments-----------------------------------------
+
 
 import pandas as pd                               #reading, writing and manipulating the data (using tables)
 import numpy as np                                #Library for linear algebra and some probabiltity (raw data) 
