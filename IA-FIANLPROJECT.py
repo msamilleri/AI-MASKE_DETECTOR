@@ -17,27 +17,15 @@ from keras.preprocessing.image import ImageDataGenerator  #used to expand the tr
 import matplotlib.pyplot as plt                   #library to plot graphs
 from google.colab import files                    #To be able to upload files
 
-"""Here I will upload the dataset file called `"data"` that has 2 subfolders `"with"` and `"without`" and unzip"""
-
-#upload file
-uploaded = files.upload()
-
-#unzipping the folder
-!unzip data.zip
-
-#delete the zip file as it is not needed anymore
-!rm data.zip
 
 # setting the batch size and the epochs
 
 batch_size = 8
 epochs = 30
 
-"""Splitting the images (80% training and 20%
-validation) and Data augmanting it
-"""
 
-directory = 'data'
+
+directory = '/content/drive/My Drive/Colab Notebooks/data/data/' #i uploaded my datasets on google drive 
 
 train_datagen = ImageDataGenerator(validation_split=0.2,        # Splits the data into training (80%) and validation (20%)
                                    rescale = 1./255,            # Multiple the colors by a number between 0-1 to process data faster
